@@ -2,5 +2,5 @@ class Item {
   final String name;
   final int price;
 
-  Item({this.name = '', this.price = 0});
+  Item(this.name, this.price);
 }

@@ -3,8 +3,7 @@ import '../models/item.dart';
 
 class HomePage extends StatelessWidget {
   final List<Item> items = [
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000)
+    Item('Sugar', 5000), Item('Salt', 2000)
   ];
 
   @override
@@ -31,7 +30,7 @@ class HomePage extends StatelessWidget {
                       margin: EdgeInsets.all(8),
                       child: Row(
                         children: [
-                          Expanded(child: Text(item.name.toString())),
+                          Expanded(child: Text(item.name)),
                           Expanded(
                             child: Text(
                               item.price.toString(),
@@ -51,3 +50,5 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
